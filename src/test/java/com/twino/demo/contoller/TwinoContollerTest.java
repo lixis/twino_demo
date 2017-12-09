@@ -24,8 +24,12 @@ public class TwinoContollerTest {
 
     @Test
     public void getLoanById_Success() {
-
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/test",
                 String.class)).contains("new_loan");
+    }
+
+    @Test
+    public void createLoan_Success() {
+        // todo test
     }
 }

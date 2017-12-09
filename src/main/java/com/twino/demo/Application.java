@@ -15,15 +15,4 @@ public class Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
-//
-//    @Bean
-//    public TestRestTemplate testRestTemplate(
-//            ObjectProvider<RestTemplateBuilder> builderProvider,
-//            Environment environment) {
-//        RestTemplateBuilder builder = builderProvider.getIfAvailable();
-//        TestRestTemplate template = builder == null ? new TestRestTemplate()
-//                : new TestRestTemplate(builder.build());
-//        template.setUriTemplateHandler(new LocalHostUriTemplateHandler(environment));
-//        return template;
-//    }
 }
